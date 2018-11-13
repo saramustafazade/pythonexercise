@@ -1,0 +1,22 @@
+https://github.com/saramustafazade/pythonexercise.git
+#Instruction:
+
+#Giving some economic data like Money supply, CPI and so on. Write a Python script to analyze data and make linear regression and predict the models and test the model fit.
+#Extract useful analytical results then explain them.
+
+#Hint: the installation of some Python modules like numpy, pandas or matplotlib, allow to use additional mathematical functions. These are not necessary, but could be helpful.
+
+#1 Working dataset : the text file “Data.csv” (lines and rows of numerical values, with a header)
+
+#2 Import the data in Data.csv to study whether there is a tradeoff between the CPI and the Money(M1).
+#And the Consumer Confidence Index and Total Retail Sales of Consumer Goods(100Million)
+
+#3 Compute the correlation between two variables. What do you conclude?
+
+#4 Try to Estimate the linear models and R-Squared.
+
+#5 Figure out the number of observations and R2. What does the intercept in this equation mean?
+
+#6 Plot the variables and add the regression line.
+
+#7 Obtain the OLS residuals and Compute the correlation between CPI and the residuals .

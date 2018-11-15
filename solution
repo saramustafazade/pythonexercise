@@ -1,0 +1,25 @@
+import pandas as pd
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+
+f=open("/Users/sara/Desktop/YIN_Can/data.csv")
+
+data = pd.read_csv(f)
+print(data)
+
+y=data["CPI"]
+X=data["M2"]
+#linear regression
+X=sm.add_constant(X)
+result=sm.OLS(y,X).fit()
+y_pred=result.predict(X)
+#4and5
+print(result.summary())
+print(result.params)
+
+
+plt.scatter(data["CPI"],data["M2"],c="b")
+plt.plot(X,y_pred,c="r")
+plt.xlabel("CPI")
+plt.ylabel("M2")
+plt.show()
